@@ -16,9 +16,6 @@ It showcases essential web development skills using **HTML**, **CSS**, and **Jav
 ### Homepage
 ![Homepage](./Screenshots/Homepage.jpg)
 
-![Homepage](./Screenshots/CartOpen.jpg)
-
-
 ## **Current Status**
 
 Features that are **Not Working**
