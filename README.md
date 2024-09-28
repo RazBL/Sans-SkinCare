@@ -13,7 +13,7 @@ It showcases essential web development skills using **HTML**, **CSS**, and **Jav
 ## Screenshots
 
 ### Homepage
-![Homepage](./Screenshots/Screenshot 2024-09-28 233708.jpg)
+![Homepage](./Screenshots/Homepage.jpg)
 
 ## **Current Status**
 
