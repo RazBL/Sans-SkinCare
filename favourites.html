@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+
+    <link rel="stylesheet" href="Style.css">
+    <title>San's Care</title>
+</head>
+
+<body>
+
+    <!--darkening the website on add to cart click-->
+    <div class="darken-website hidden"></div>
+
+    <!-- commercial area -->
+    <section class="commercial-area">
+
+        <div class="container-large">
+            <div class="commercial-box">
+                <span class="commercial">Free shipping from 49$</span>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Main Menu area -->
+    <section class="main-menu">
+
+
+        <div class="burger-menu">
+            <ul>
+                <li>
+                    <i class="fa fa-bars openResponsive" aria-hidden="true"></i>
+                    <i class="fa fa-times closeResponsive hidden" aria-hidden="true"></i>
+                    <div class="responsive-menu hidden">
+                        <ul>
+                            <li><a href="category-products.html?id=6">SKIN PRODUCTS</a></li>
+                            <li><a href="category-products.html?id=0">BESTSELLERS</a></li>
+                            <li><a href="mailto:Raz_secret@outlook.com">CONTACT US</a></li>
+                            <li><a href="favourites.html">FAVORITES</a></li>
+                            <li><a href="#">SIGN IN</a></li>
+                        </ul>
+                    </div>
+                    <div class="darken-mode hidden" onclick="burgerMenuOpenAndClose()"></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-menu">
+
+
+
+            <div class="navigation">
+                <ul>
+                    <li><a href="category-products.html?id=6">SKIN PRODUCTS <i class="fa fa-chevron-down"
+                                aria-hidden="true"></i></a>
+                        <div class="dropdown-menu">
+                            <ul id="menu-categories">
+                                <!-- <li><a href="#">BESTSELLERS</a></li>
+                                <li><a href="#">CLEANSERS</a></li>
+                                <li><a href="#">TONERS</a></li>
+                                <li><a href="#">EXFOLIANT</a></li>
+                                <li><a href="#">CREAMS</a></li> -->
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <span class="logo">
+                <a href="Index.html"><img src="desktop/Sans-skincare-logo.svg" width="160px"></a>
+            </span>
+
+
+
+            <div class="secondary-menu">
+
+                <div class="search-bar">
+                    <label for="search-bar-toggle" class="search-bar-label">
+
+                        <i class="fa fa-search search-icon secondary-menu-icon " aria-hidden="true"></i>
+                        <span class="menu-text">Search</span>
+
+                    </label>
+
+                    <div class="search-bar-dropdown hidden">
+                        <div class="search-bar-wrapper">
+
+                            <i class="fa fa-search drop-down-search-icon" aria-hidden="true"></i>
+                            <input type="search" placeholder="Search..." class="search-input">
+
+                        </div>
+                        <div class="darken-mode-search"></div>
+                    </div>
+                </div>
+
+
+                <div class="contact-us">
+                    <a href="#">
+                        <i class="fa fa-envelope secondary-menu-icon contact-us-top" aria-hidden="true"></i>
+                        <span class="menu-text">Contact</span>
+                    </a>
+                </div>
+
+
+                <div class="sign-in">
+                    <a href="#">
+                        <i class="fa fa-user dark-user-icon secondary-menu-icon" aria-hidden="true"></i>
+                        <span class="menu-text">Sign in</span>
+                    </a>
+                </div>
+
+
+                <div class="bag">
+                    <a href="cart.html"><i class="fa fa-shopping-bag secondary-menu-icon" aria-hidden="true"></i>
+                        <span class="menu-text">Bag</span>
+                        <div id="bag-item-counter" class="hidden"></div>
+                    </a>
+                </div>
+
+                <div class="favourite-menu">
+                    <a href="favourites.html"><i class="fa fa-heart secondary-menu-icon favourite-menu-icon" aria-hidden="true"></i>
+                    <span class="menu-text">Favourite</span></a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!--Side Bar-->
+
+
+    <div class="shopping-cart-side moved-out-cart">
+
+        <div class="top-minicart-section">
+            <h3 id="mini-cart-title">Shopping Bag</h3>
+            <div class="close-minicart"><i class="fa fa-times"></i></div>
+
+        </div>
+
+
+        <div class="scrollable-cart">
+            <!-- <div class="cart-item">
+                <div class="cart-image-wrapper">
+                    <img src="Mobile/calming cream.png" class="cart-item-image">
+                </div>
+
+                <div class="cart-item-description">
+                    <h5 class="cart-item-title">Product name</h5>
+                    <div class="cart-item-remove-button"><i class="fa fa-times"></i></div>
+                    <p class="mini-description">dscription</p>
+                    <p class="single-price">22.99$</p>
+
+                    <div class="product-quantity-wrapper">
+                        <button class="minus"><i class="fa fa-minus"></i>
+                        </button><input type="text" class="quantity-input"><button class="plus"><i
+                                class="fa fa-plus"></i></button>
+
+                    </div>
+
+                    <div class="item-quantity-sum">
+                        22.99$
+                    </div>
+
+
+                </div>
+
+            </div> -->
+
+        </div>
+
+        <div class="move-checkout-bottom-wrapper">
+            <div class="total-price-and-close-cart-wrapper">
+                <span>Total price:</span>
+                <span class="total-cart-price" id="total-cart-price"></span>
+            </div>
+            <div class="cart-checkout-and-view-bag">
+                <button class="checkout-minicart-button">Proceed to Checkout</button>
+                <button class="view-shopping-bag-button">View Shopping Bag</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Main area-->
+
+    <section class="favourite-area">
+
+        <h2 id="favourite-title">Favourites</h2>
+
+        <div class="container" id="favourites-container">
+            <!-- <div class="favourite-product">
+
+                <div class="favourite-product--image">
+                    <img src="/Mobile/San’s Exfoliant.png" alt="" width="80px">
+                </div>
+
+                <div class="favourite-product--data-container">
+                    <div class="favourite-product-data--top-part">
+                        <h3 class="bag-item--title">product title</h3>
+                        <div class="bag-item--data--remove-button">
+                            <i class="fa fa-trash-o" id="bag-item--data--remove-button"></i>
+                        </div>
+                    </div>
+
+                    <div class="favourite-product-data--bottom-part" data-id="1">
+                        <div class="favourite-product-description">blablablabla</div>
+                        <div class="add-to-bag-button">Add To Bag</div>
+                    </div>
+
+                </div>
+
+            </div> -->
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!--Credits area-->
+
+    <section class="credits">
+        <div class="container-large-new">
+
+            <div class="footer-box contacts-box">
+                <h4>Contact Us</h4>
+                <a href="#">
+                    <p>Support</p>
+                </a>
+                <a href="#">
+                    <p>Contact</p>
+                </a>
+                <a href="#">
+                    <p>Sponsership</p>
+                </a>
+                </a>
+            </div>
+
+
+
+            <div class="footer-box socials-box">
+                <h4>Social Media</h4>
+                <a href="https://www.facebook.com/" target="blank_">
+                    <p>Facebook</p>
+                </a>
+                <a href="https://twitter.com/" target="blank_">
+                    <p>Twitter</p>
+                </a>
+                <a href="https://www.linkedin.com/" target="blank_">
+                    <p>Linkedin</p>
+                </a>
+                <a href="https://www.instagram.com/" target="blank_">
+                    <p>Instagram</p>
+                </a>
+            </div>
+
+            <div class="footer-box about-us-box">
+                <h4>About Us</h4>
+                <a href="#">
+                    <p>San's Skincare History</p>
+                </a>
+                <a href="#">
+                    <p>Blog</p>
+                </a>
+            </div>
+
+            <div class="footer-box news-letter">
+                <h4>Join Our Newsletter</h4>
+                <div class="email-wrapper">
+                    <input type="email" placeholder="Enter your email address" id="footer-email">
+                    <input type="submit" value="Sign Up" id="footer-email-submit">
+                </div>
+            </div>
+
+        </div>
+
+        <p class="all-rights"> ©Designed by blabla. all rights goes to blabla</p>
+
+    </section>
+
+
+</body>
+
+<script src="data.js"></script>
+
+<script src="utilities.js"></script>
+
+<script src="functions.js"></script>
+
+<script src="Main.js"></script>
+
+<script>
+
+    let favouriteContainer = qs("#favourites-container");
+
+    favouriteItems.forEach( id => {
+
+        let product = createFavouritePorduct(getProductById(id));
+        favouriteContainer.append(product);
+
+    })
+
+    //get all the buttons in best sellers
+    addToBagButtons = qsa(".add-to-bag-button");
+
+    //adds an event listener to the add to bag button on best sellers, which allow us to move it in the cart;
+    addToBagButtons.forEach(button => {
+        button.addEventListener("click", addItemToCart)
+    })
+
+    updateBagItemCounter();
+
+</script>
+
+</html>
