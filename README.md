@@ -10,6 +10,10 @@ It showcases essential web development skills using **HTML**, **CSS**, and **Jav
 - **CSS**: Styling the web pages, with responsiveness in mind.
 - **JavaScript**: Adding interactivity for features like shopping cart, favorites, and navigation.
 
+## Screenshots
+
+### Homepage
+![Homepage](./Screenshots/Screenshot 2024-09-28 233708.jpg)
 
 ## **Current Status**
 
